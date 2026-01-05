@@ -5,6 +5,9 @@ import { setupHandler } from './commands/setup';
 import { deptSelectHandler } from './components/deptSelect';
 import { verifyButtonHandler } from './components/verifyButton';
 import { pinSubmitHandler } from './components/pinSubmit';
+import { ticketCreateHandler } from './components/ticketCreate';
+import { ticketCloseHandler } from './components/ticketClose';
+
 import { FACULTIES } from './constants';
 import { Bindings } from './types';
 
@@ -23,6 +26,9 @@ FACULTIES.forEach((faculty) => {
 });
 
 app.modal('submit_pin', pinSubmitHandler);
+
+app.component('create_ticket', ticketCreateHandler);
+app.component('close_ticket', ticketCloseHandler);
 
 export default {
 	fetch: (request: Request, env: Bindings, ctx: ExecutionContext) => {

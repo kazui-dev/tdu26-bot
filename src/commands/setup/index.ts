@@ -3,6 +3,7 @@ import { setupDept } from './dept';
 import { setupRules } from './rules';
 import { setupPin } from './pin';
 import { setupUnpin } from './unpin';
+import { setupTicket } from './ticket';
 
 export const setupHandler = (c: CommandContext) => {
   const subCommand = c.sub.command;
@@ -16,6 +17,8 @@ export const setupHandler = (c: CommandContext) => {
       return setupPin(c);
     case 'unpin':
       return setupUnpin(c);
+    case 'ticket':
+      return setupTicket(c);
     default:
       return c.res({
         content: '不明なサブコマンドです。',

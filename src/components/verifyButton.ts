@@ -26,7 +26,7 @@ export const verifyButtonHandler = async (c: ComponentContext<{ Bindings: Bindin
     let messageContent = '';
 
     if (result.status === 'added') {
-      messageContent = '認証が完了しました。\nhttps://discord.com/channels/1451183228613296232/1452450627362885632 へ移動してください。';
+      messageContent = '✅ 認証が完了しました。\nhttps://discord.com/channels/1451183228613296232/1452450627362885632 へ移動してください。';
     } else if (result.status === 'rejected') {
       messageContent = '既に認証済みです。\n他のチャンネルが表示されない場合は、 https://discord.com/channels/1451183228613296232/1452450627362885632 へ移動してください。';
     } else {

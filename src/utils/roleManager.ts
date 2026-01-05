@@ -73,7 +73,7 @@ export const addRolesIfNoneExists = async (
   // 管理対象ロールを既に持っていたら拒否
   const alreadyHasManagedRole = currentRoles.some(id => allManagedRoleIds.includes(id));
   if (alreadyHasManagedRole) {
-    return { status: 'rejected', message: 'この設定は一度しか変更できません。\n変更が必要な場合は、管理人にお問い合わせください。' };
+    return { status: 'rejected', message: 'この設定は一度しか変更できません。\n変更が必要な場合は、 https://discord.com/channels/1451183228613296232/1453187384563728475 をご利用ください。' };
   }
 
   // 持っていなければ付与
@@ -86,5 +86,5 @@ export const addRolesIfNoneExists = async (
   }
 
   const mentions = newRoleIds.map(id => `<@&${id}>`).join('\n');
-  return { status: 'added', message: `ロールを付与しました:\n${mentions}\n変更が必要な場合は、管理人にお問い合わせください。` };
+  return { status: 'added', message: `ロールを付与しました:\n${mentions}\n変更が必要な場合は、 https://discord.com/channels/1451183228613296232/1453187384563728475 をご利用ください。` };
 };
