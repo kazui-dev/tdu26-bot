@@ -7,7 +7,11 @@ export const setupRules = (c: CommandContext) => {
   );
 
   return c.res({
-    content: SERVER_RULES_TEXT,
+    embeds: [{
+      title: 'サーバールール',
+      description: SERVER_RULES_TEXT,
+      color: 0x0099ff,
+    }],
     components: components,
   });
 };
