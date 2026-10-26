@@ -18,7 +18,7 @@
     "wrangler": "^4.152.0"
   },
   "dependencies": {
-    "discord-hono": "^0.20.3",
+    "discord-hono": "^0.22.2",
     "tsx": "^4.23.15"
   },
   "engines": {

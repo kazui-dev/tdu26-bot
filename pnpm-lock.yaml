@@ -13,8 +13,8 @@ importers:
   .:
     dependencies:
       discord-hono:
-        specifier: ^0.20.3
-        version: 0.20.3
+        specifier: ^0.22.2
+        version: 0.22.2
       tsx:
         specifier: ^4.23.15
         version: 4.23.15
@@ -592,9 +592,14 @@ packages:
     resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
     engines: {node: '>=8'}
 
-  discord-hono@0.20.3:
-    resolution: {integrity: sha512-ze/r3GqirT8kKUub7TamtrM/UFLPgEDc2286eKsdlXdeQQ6xvk1fWlDQBeQa0qirk4yj9H3xYx5/AooTROXn4w==}
+  discord-hono@0.22.2:
+    resolution: {integrity: sha512-PLd+kic/NyAqIPrfd3Y6pNMxb+aJ2ndXjF+p9CWafPv0P6e4+N+ZgZP4/TH2gprv7NY4tmlwKLl2hTxjRBRIZw==}
     engines: {node: '>=18.4.0'}
+    peerDependencies:
+      discord-api-types: '>=0.38.0'
+    peerDependenciesMeta:
+      discord-api-types:
+        optional: true
 
   error-stack-parser-es@1.0.5:
     resolution: {integrity: sha512-5qucVt2XcuGMcEGgWI7i+yZpmpByQ8J1lHhcL7PwqCwu9FPP3VUXzT4ltHe5i2z9dePwEHcDVOAfSnHsOlCXRA==}
@@ -1271,7 +1276,7 @@ snapshots:
 
   detect-libc@2.1.2: {}
 
-  discord-hono@0.20.3: {}
+  discord-hono@0.22.2: {}
 
   error-stack-parser-es@1.0.5: {}
 
